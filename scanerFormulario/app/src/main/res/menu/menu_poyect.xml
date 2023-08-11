@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/menu_cambiar_nombre_proyect"
+        android:title="Cambiar nombre" />
+    <item
+        android:id="@+id/menu_eliminar_proyect"
+        android:title="Eliminar" />
+    <item
+        android:id="@+id/menu_descargar_proyect"
+        android:title="Descargar" />
+    <item
+        android:id="@+id/menu_descargar_reporte"
+        android:title="Generar reportes" />
+
+</menu>

@@ -1,0 +1,5 @@
+*.apk
+out.aar 
+*opencv*
+/sdk
+scanerFormulario/sdk/

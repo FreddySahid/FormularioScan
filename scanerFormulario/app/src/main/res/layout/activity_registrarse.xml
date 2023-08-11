@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Registrarse">
+    <FrameLayout
+        android:id="@+id/frameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="412dp"
+            android:layout_height="451dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:contentDescription="TODO"
+            android:scaleType="centerCrop"
+            android:src="@drawable/fondo"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="1dp"
+            tools:layout_editor_absoluteY="1dp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="451dp"
+            android:background="#80000000" />
+    </FrameLayout>
+
+    <ImageView
+        android:id="@+id/imageViewlogo"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:contentDescription="TODO"
+        android:scaleType="centerCrop"
+        android:src="@drawable/logo"
+        app:layout_constraintBottom_toBottomOf="@+id/cardView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.459"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.029"
+        tools:ignore="MissingConstraints" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        app:cardCornerRadius="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/frameLayout"
+        app:layout_constraintVertical_bias="0.826"
+        tools:ignore="MissingConstraints"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="130dp"
+        android:layout_marginBottom="10dp">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+
+            <TextView
+                android:id="@+id/bienvenidaTexto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:gravity="center"
+                android:text="@string/registrarseTexto"
+                android:textColor="@color/negroTitulo"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                tools:ignore="MissingConstraints" />
+
+            <EditText
+                android:id="@+id/nombreRegistrarse"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/rounded_edittext"
+                android:drawableStart="@drawable/icono_nombres"
+                android:drawablePadding="10dp"
+                android:hint="@string/nombrePersona"
+                android:inputType="textPersonName|textCapWords"
+                android:padding="20dp"
+                android:textColor="#766A6A"
+                android:textSize="18sp"
+                tools:ignore="TextSizeCheck"
+                />
+            <EditText
+                android:id="@+id/apellidosRegistrarse"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/rounded_edittext"
+                android:drawableStart="@drawable/icono_nombres"
+                android:drawablePadding="10dp"
+                android:hint="@string/apellidoPersona"
+                android:inputType="textPersonName|textCapWords"
+                android:padding="20dp"
+                android:textColor="#766A6A"
+                android:textSize="18sp"
+                tools:ignore="TextSizeCheck"
+                />
+
+
+            <EditText
+                android:id="@+id/correoRegistrarse"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/rounded_edittext"
+                android:drawableStart="@drawable/icono_correo"
+                android:drawablePadding="10dp"
+                android:hint="@string/correologin"
+                android:inputType="textEmailAddress"
+                android:padding="20dp"
+                android:textColor="#766A6A"
+                android:textSize="18sp"
+                tools:ignore="TextSizeCheck" />
+            <EditText
+                android:id="@+id/contrasenaRegistrarse"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/rounded_edittext"
+                android:drawableStart="@drawable/icono_password"
+                android:drawablePadding="10dp"
+                android:hint="@string/passwordLogin"
+                android:inputType="textPassword"
+                android:padding="20dp"
+                android:textColor="#766A6A"
+                android:textSize="18sp" />
+
+
+            <EditText
+                android:id="@+id/contrasenaRegistrarse2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/rounded_edittext"
+                android:drawableStart="@drawable/icono_password"
+                android:drawablePadding="10dp"
+                android:hint="@string/passwordLogin"
+                android:inputType="textPassword"
+                android:padding="20dp"
+                android:textColor="#766A6A"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/buttonRegistrarse"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/rounded_button"
+                android:color="#ECECEC"
+                android:gravity="center"
+                android:shape="rectangle"
+                android:text="@string/registrarseTexto"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                app:cardCornerRadius="15dp" />
+
+
+
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </androidx.cardview.widget.CardView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

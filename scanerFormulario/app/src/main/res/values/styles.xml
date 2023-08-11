@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="estiloBtn" parent="Widget.AppCompat.Button">
+        <item name="android:background">@color/gris</item>
+    </style>
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowNoTitle">true</item>
+        <!-- Otros atributos personalizados -->
+    </style>
+    <style name="SearchViewStyle" parent="Widget.AppCompat.SearchView">
+        <item name="android:textColor">@color/colorTextoBusqueda</item>
+        <item name="android:textColorHint">@color/colorTextoSugerencia</item>
+    </style>
+
+</resources>

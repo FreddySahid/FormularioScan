@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">FormularioScan</string>
+    <!-- IniciarSesionActividad-->
+    <string name="iniciarSesion">Iniciar sesión</string>
+    <string name="btnIniciarSesion">Ingresar</string>
+    <string name="correologin">Email</string>
+    <string name="passwordLogin">Password</string>
+    <string name="usuarioNuevo">¿No tienes una cuenta?</string>
+    <string name="usuarioNuevoSegundo">Registrate aquí.</string>
+    <string name="bienvenidaTexto">Bienvenido a FormularioScan</string>
+
+    <!-- IniciarSesionActividad-->
+    <string name="registrarseTexto">Registrarse</string>
+    <string name="nombrePersona">Nombre</string>
+    <string name="apellidoPersona">Apellidos</string>
+
+    <string name="formularioName">Nombre del formulario</string>
+    <string name="sheetName">Nombre de la hoja</string>
+    <string name="projectName">Nombra al proyecto</string>
+
+
+</resources>
